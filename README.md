@@ -11,3 +11,5 @@
 1. 各jsページ分離
 1. 各メソッドの順番把握等
 
+# 動作確認URL（GitHub Pages）
+https://kacasss.github.io/quiz_game/
