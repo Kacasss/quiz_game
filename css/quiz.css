@@ -1,0 +1,237 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+h2,
+p,
+button {
+  padding: 0;
+  margin: 0;
+}
+
+#title1-body {
+  background: rgb(243, 119, 119);
+}
+
+#title2-body {
+  background: rgb(119, 162, 243);
+}
+
+#title3-body {
+  background: rgb(111, 243, 122);
+}
+
+
+#start,
+#restart {
+  display: block;
+  width: 150px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px auto;
+  cursor: pointer;
+  letter-spacing: 0.3rem;
+  font-weight: bold;
+}
+
+.start1 {
+  border: 1px solid rgb(243, 119, 119);
+  box-shadow: 0px 5px rgb(240, 44, 44);
+  background: rgb(243, 119, 119);
+}
+
+.start1:hover {
+  background: rgb(240, 44, 44);
+}
+
+.start2 {
+  border: 1px solid rgb(119, 162, 243);
+  box-shadow: 0px 5px rgb(55, 119, 236);
+  background:rgb(119, 162, 243);
+}
+
+.start2:hover {
+  background: rgb(55, 119, 236);
+}
+
+.start3 {
+  border: 1px solid rgb(111, 243, 122);
+  box-shadow: 0px 5px rgb(11, 224, 29);
+  background:rgb(111, 243, 122);
+}
+
+.start3:hover {
+  background: rgb(11, 224, 29);
+}
+
+#start:hover,
+#restart:hover {
+  transform: translateY(5px);
+  box-shadow: 0px 0px;
+  transition: 0.3s;
+}
+
+#wrapper1 {
+  box-shadow: 5px 10px 10px rgb(240, 44, 44);
+}
+
+#wrapper2 {
+  box-shadow: 5px 10px 10px rgb(55, 119, 236);
+}
+
+#wrapper3 {
+  box-shadow: 5px 10px 10px rgb(11, 224, 29);
+}
+
+.wrapper {
+  background: #fbfeff;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 50px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+#quiz-title1,
+#quiz-title2,
+#quiz-title3 {
+  margin-bottom: 50px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+ul {
+  padding: 0;
+  margin: 0 0 30px 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  padding: 10px;
+  margin-right: 10px;
+  width: 150px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.li-color1 {
+  background: rgb(243, 119, 119);
+  box-shadow: 0px 5px rgb(240, 44, 44);
+}
+
+.li-color1:hover {
+  background: rgb(240, 44, 44);
+  transform: translateY(5px);
+  box-shadow: 0px 0px;
+  transition: 0.3s;
+}
+
+.li-color2 {
+  background: rgb(119, 162, 243);
+  box-shadow: 0px 5px rgb(55, 119, 236);
+}
+
+.li-color2:hover {
+  background: rgb(55, 119, 236);
+  transform: translateY(5px);
+  box-shadow: 0px 0px;
+  transition: 0.3s;
+}
+
+.li-color3 {
+  background: rgb(111, 243, 122);
+  box-shadow: 0px 5px rgb(11, 224, 29);
+}
+
+.li-color3:hover {
+  background: rgb(11, 224, 29);
+  transform: translateY(5px);
+  box-shadow: 0px 0px;
+  transition: 0.3s;
+}
+
+li:last-child {
+  margin-right: 0px;
+}
+
+li.correct {
+  color: white;
+  font-weight: bold;
+  transform: translateY(5px);
+  box-shadow: 0px 0px;
+}
+
+li.wrong {
+  color: rgb(29, 29, 29);
+  font-weight: bold;
+  transform: translateY(5px);
+  box-shadow: 0px 0px;
+}
+
+li.correct::after {
+  content: ' ： 正解';
+}
+
+li.wrong::after {
+  content: ' ： 間違い';
+}
+
+li.not-working {
+  pointer-events: none;
+}
+
+.a-level {
+  margin-top: 30px;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid rgb(209, 209, 209);
+  background: rgb(209, 209, 209);
+  width: 100px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color:rgb(114, 112, 112);
+  box-shadow: 0px 5px rgb(182, 182, 182);
+}
+
+.a-level:hover {
+  background:  rgb(182, 182, 182);
+  transform: translateY(5px);
+  box-shadow: 0px 0px;
+  transition: 0.3s;
+  color: white;
+}
+
+.a-level:last-child {
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 650px){
+  .wrapper {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  li {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 0px;
+    margin-right: 0px;
+  }
+}

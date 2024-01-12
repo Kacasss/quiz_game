@@ -1,0 +1,37 @@
+#gauge_wrapper{
+  border: 1px solid #333;
+  background: rgb(223, 223, 223);
+  max-width: 710px;
+  margin: 0 auto;
+  padding: 0;
+  border: 0px;
+}
+
+#gauge {
+  width: 0%;
+  height: 20px;
+
+}
+
+.gauge1 {
+  background: rgb(243, 119, 119);
+}
+
+.gauge2 {
+  background: rgb(119, 162, 243);
+}
+
+.gauge3 {
+  background: rgb(111, 243, 122);
+}
+
+@media screen and (max-width: 650px){
+  #gauge_wrapper{
+    max-width: 400px;
+    width: 100%;
+  }
+
+  #gauge {
+    height: 24px;
+  }
+}
